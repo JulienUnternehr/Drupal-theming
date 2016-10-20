@@ -1,0 +1,77 @@
+<?php
+
+
+function hello_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the block module.
+    case 'help.page.hello':
+      return t('Aide du module Help');
+      break;
+  }
+}
+
+function hello_cron() {
+  drupal_set_message(t('Message hook cron TEST'), 'error');
+}
+
+function hello_user_login(\Drupal\Core\Session\AccountInterface $account) {
+  $account_name = $account->getAccountName();
+    $text = t('Bienvenue cher ' . $account_name);
+    drupal_set_message($text);
+}
+
+function hello_entity_update(Drupal\Core\Entity\EntityInterface $entity) {
+    //kint($entity);
+    $entity_type = $entity->getEntityTypeId();
+    if($entity_type == 'node') {
+        $database = \Drupal::database();
+        $utilisateur = \Drupal::currentUser();
+        $id = $utilisateur->id();
+        $id_entity = $entity->id();
+
+        $database->insert('hello_node_history')->fields(
+            array(
+                'nid' => $id_entity,
+                'update_time' => time(),
+                'uid' => $id,
+            )
+        )->execute();
+    }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function hello_page_attachments(array &$page)
+{
+    $page ['#attached']['library'][] = 'hello/base';
+}
+
+function hello_preprocess_block(array &$variables) {
+    $couleur = \Drupal::config('hello.config')->get('color');
+    $variables['attributes']['class'][] = $couleur;
+}
+
+function hello_theme ($existing, $type, $theme, $path) {
+    return array(
+        'hello_node_history' => array(
+            'template' => 'hello-node-history',
+            'variables' => array('node' => NULL, 'count' => NULL),
+        ),
+    );
+}
+
+function hello_form_alter(array &$form, \Drupal\Core\Form\FormStateInterface &$form_state,$form_id) {
+    if ($form_id == 'contact_message_feedback_form') {
+        $form['champ_telephone'] = array(
+            '#type' => 'number',
+            '#title' => t('Téléphone'),
+            '#weight' =>'-1',
+        );
+        $form['subject']['#access'] = FALSE;
+        $form['actions']['submit']['#value'] = t('Envoyer le message maintenant');
+        kint($form);
+    }
+}
+
+

@@ -1,0 +1,67 @@
+hello.hello:
+  path: '/hello/{param}'
+  defaults:
+    _title: 'Hello'
+    _controller: '\Drupal\hello\Controller\HelloController::content'
+    param: ''
+  requirements:
+    _access: 'TRUE'
+
+hello.hello_rss:
+  path: '/hello_rss'
+  defaults:
+    _title: 'Hello RSS'
+    _controller: '\Drupal\hello\Controller\HelloRssController::content'
+  requirements:
+    _access: 'TRUE'
+
+hello.liste_noeuds:
+  path: '/hello/liste_noeuds/{param_list}'
+  defaults:
+    _title: 'Liste de Noeuds'
+    _controller: '\Drupal\hello\Controller\HelloListeNoeudsController::content'
+    param_list: ''
+  requirements:
+    _access: 'TRUE'
+
+hello.historique:
+  path: '/node/{node}/historique'
+  defaults:
+    _title: 'Historique'
+    _controller: '\Drupal\hello\Controller\HelloHistoriqueController::content'
+    historique: ''
+  requirements:
+    _access: 'TRUE'
+
+hello.calculatrice:
+  path: '/hello/calculatrice'
+  defaults:
+    _title: 'Calculatrice'
+    _form: '\Drupal\hello\Form\HelloForm'
+  requirements:
+    _access: 'TRUE'
+
+hello.resultat:
+  path: '/hello/resultat/{result}'
+  defaults:
+    _title: 'Résultat du calcul'
+    _controller: '\Drupal\hello\Controller\HelloResultatController::content'
+    param: ''
+  requirements:
+    _access: 'TRUE'
+
+hello.couleur_des_blocs:
+  path: '/admin/appearance/couleur_des_blocs'
+  defaults:
+    _title: 'Gestion de la couleur'
+    _form: '\Drupal\hello\Form\HelloFormCouleurs'
+  requirements:
+    _permission: 'permission_admin_couleur'
+
+hello.access:
+    path: '/hello-access'
+    defaults:
+      _controller: 'Drupal\hello\Controller\HelloAccessControler::content'
+      _title: 'Hello access'
+    requirements:
+      _access_hello: '48'

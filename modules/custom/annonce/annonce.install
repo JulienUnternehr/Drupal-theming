@@ -1,0 +1,38 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+function annonce_schema() {
+    $schema['annonces_consultees'] = array(
+        'description' => 'annonces_consultees par l\'utilisateur',
+        'fields' => array(
+            'hid' => array(
+                'description' => 'Primary Key: Unique history ID.',
+                'type'        => 'serial',
+                'unsigned'    => TRUE,
+                'not null'    => TRUE,
+            ),
+            'nid' => array(
+                'description' => 'Node ID.',
+                'type'        => 'int',
+                'unsigned'    => TRUE,
+                'not null'    => TRUE,
+            ),
+            'uid' => array(
+                'description' => 'User ID',
+                'type'        => 'int',
+                'unsigned'    => TRUE,
+                'not null'    => TRUE,
+            ),
+            'date_consultation' => array(
+                'description' => 'date de consultation des annonces',
+                'type'        => 'int',
+                'unsigned'    => TRUE,
+                'not null'    => TRUE,
+            ),
+        ),
+        'primary key' => array('hid'),
+        'indexes' => array('nid' => array('nid')),
+    );
+    return $schema;
+}

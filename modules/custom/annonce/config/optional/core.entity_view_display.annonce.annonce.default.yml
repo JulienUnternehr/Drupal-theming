@@ -1,0 +1,28 @@
+uuid: 996e2c91-fddf-4595-a905-57341bffaa75
+langcode: fr
+status: true
+dependencies:
+  module:
+    - annonce
+    - user
+_core:
+  default_config_hash: V-eGTTW7ec6HUOSRHtTuwKHiEZ3HbSHCU5yh8-rsSy4
+id: annonce.annonce.default
+targetEntityType: annonce
+bundle: annonce
+mode: default
+content:
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

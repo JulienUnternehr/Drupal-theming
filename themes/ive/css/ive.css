@@ -1,0 +1,133 @@
+
+.site-branding__name a,
+.sidebar h2 {
+	color: orange;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.site-branding__text {
+	font-size:1.5rem;
+	padding: 0;
+}
+
+.path-frontpage .node--view-mode-teaser h2 a {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:2rem;
+	font-family:'georgia';
+}
+
+.sidebar h2 {
+	text-transform: uppercase;
+	font-style: italic;
+	border-bottom: 1px solid orange;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sidebar .block {
+	background: white;
+}
+
+#header {
+	background: none;
+}
+
+.region-primary-menu .menu-item a {
+	font-weight: bold;
+}
+
+.region-primary-menu .menu a {
+	background: none;
+	border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.region-primary-menu .orange .menu a,
+.orange .site-branding__name a,
+.orange .node--view-mode-teaser h2 a,
+.orange .page-title .field--name-name,
+.orange h1.page-title{
+	color:orange;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.orange .menu-item a.is-active {
+	background: orange;
+	color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.region-primary-menu .blue-class .menu a,
+.blue-class .site-branding__name a,
+.blue-class .node--view-mode-teaser h2 a,
+.blue-class .page-title .field--name-name,
+.blue-class h1.page-title{
+	color:blue;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.blue-class .menu-item a.is-active {
+	background: blue;
+	color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.region-primary-menu .vert .menu a,
+.vert .site-branding__name a,
+.vert .node--view-mode-teaser h2 a,
+.vert .page-title .field--name-name,
+.vert h1.page-title{
+	color:green;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.vert .menu-item a.is-active {
+	background: green;
+	color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.drupal8 {
+	background:#B0E0E6;
+}
+
+.Articles2colonnes .Contenu .Fleft {
+	float:left;
+	width: 48%;
+	margin:1%;
+}
+
+.Articles2colonnes .Contenu .Fright {
+	float:right;
+	width: 48%;
+	margin:1%;
+}
+
+.colonne {
+	float: left;
+	width: 50%;
+}
+
+.form-required:after {
+	background:none;
+}
+
+a.external:after {
+  /* content: "\0000a0[\2197]"; */
+  content: url( ../icons/external-link.gif);
+
+}
+
+.field--name-title {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

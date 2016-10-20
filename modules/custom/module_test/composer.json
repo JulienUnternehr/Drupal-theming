@@ -1,0 +1,14 @@
+{
+  "name": "drupal/module_test",
+  "type": "drupal-module",
+  "description": "Module Test via console drupal composer",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/module_test",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/module_test",
+    "source": "http://cgit.drupalcode.org/module_test"
+  },
+  "require": { }
+}

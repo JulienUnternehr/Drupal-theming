@@ -1,0 +1,19 @@
+
+.block-region-main-1 {
+	background:blue;
+}
+.block-region-main-2 {
+	background:red;
+}
+.block-region-main-3 {
+	background:green;
+}
+.block-region-main-4 {
+	background:yellow;
+}
+
+.Four-squares-content {
+	width: 50%;
+	float: left;
+	color: black;
+}

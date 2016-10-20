@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains module_test.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function module_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the module_test module.
+    case 'help.page.module_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module Test via console drupal composer') . '</p>';
+      return $output;
+
+    default:
+  }
+}

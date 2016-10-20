@@ -1,0 +1,14 @@
+#sidebar-first .region-sidebar-first .orange {border:1px solid orange;border-radius: 10px;color: orange;}
+#sidebar-first .region-sidebar-first .orange h2 {border-bottom: 1px solid orange;color: orange;font-weight: bold;}
+.orange .color_user,
+.orange label {color: orange;font-weight:bold;}
+
+#sidebar-first .region-sidebar-first .blue-class {border:1px solid blue;border-radius: 10px;color:blue;}
+#sidebar-first .region-sidebar-first .blue-class h2 {border-bottom: 1px solid blue;color: blue;font-weight: bold;}
+.blue-class .color_user,
+.blue-class label  {color: blue;font-weight:bold;}
+
+#sidebar-first .region-sidebar-first .vert {border:1px solid green;border-radius: 10px;color:green;}
+#sidebar-first .region-sidebar-first .vert h2 {border-bottom: 1px solid green;color: green;font-weight: bold;}
+.vert .color_user,
+.vert label  {color: green;font-weight:bold;}

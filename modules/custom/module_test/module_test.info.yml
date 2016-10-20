@@ -1,0 +1,5 @@
+name: module_test
+type: module
+description: Module Test via console drupal composer
+core: 8.x
+package: Custom

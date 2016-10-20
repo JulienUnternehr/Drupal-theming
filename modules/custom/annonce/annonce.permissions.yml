@@ -1,0 +1,24 @@
+permission_view_annonce:
+  title: 'view Annonce entity'
+  description: 'view Annonce entity'
+  restrict access: 'true'
+
+permission_add_annonce:
+  title: 'add Annonce entity'
+  description: 'add Annonce entity'
+  restrict access: 'true'
+
+permission_edit_annonce:
+  title: 'edit Annonce entity'
+  description: 'edit Annonce entity'
+  restrict access: 'true'
+
+permission_delete_annonce:
+  title: 'delete Annonce entity'
+  description: 'delete Annonce entity'
+  restrict access: 'true'
+
+permission_admin_annonce:
+  title: 'administer Annonce entity'
+  description: 'administer Annonce entity'
+  restrict access: 'true'
