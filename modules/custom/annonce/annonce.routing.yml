@@ -46,6 +46,12 @@ entity.annonce.delete_form:
   requirements:
     _entity_access: 'annonce.delete'
 
+annonce.historique:
+  path: '/admin/structure/annonce/historique-des-annonces'
+  defaults:
+    _title: 'Historique des Annonces'
+  requirements:
+    _entity_access: 'annonce.view'
 
 annonce.settings:
   path: '/admin/structure/annonce'

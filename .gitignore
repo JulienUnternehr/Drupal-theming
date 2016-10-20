@@ -43,3 +43,4 @@ core/phpcs.xml
 core/phpunit.xml
 
 *.DS_Store
+/modules/custom/annonce/test

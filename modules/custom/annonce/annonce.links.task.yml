@@ -22,3 +22,9 @@ entity.annonce.collection:
   route_name: entity.annonce.collection.admin
   base_route: system.admin_content
   title: 'Annonces'
+
+entity.annonce.historique:
+  route_name: view.annonce.historique.page_1
+  base_route: annonce.settings
+  title: 'Historique des annonces'
+  weight: 10
